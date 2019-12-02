@@ -1,4 +1,5 @@
 #include "i2c.h"
+#include "smbus.c"
 #include <stdio.h>
 #include <fcntl.h>
 #include <unistd.h>
@@ -6,6 +7,7 @@
 extern "C"
 {
   #include <linux/i2c-dev.h>
+  #include <linux/i2c.h>
 }
 
 static int file;
